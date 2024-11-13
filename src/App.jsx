@@ -1,4 +1,4 @@
-import { Button } from "./components/Button"
+import { Blocks } from "./components/Blocks"
 import { Layaut } from "./components/Layaut"
 import { NavBar } from "./components/NavBar"
 
@@ -9,8 +9,8 @@ function App() {
       <div className="bg-secundary min-h-screen">
           <NavBar></NavBar>
           <Layaut>
-            <p></p>
           </Layaut>
+          <Blocks />
       </div>
     </>
   )
