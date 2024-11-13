@@ -1,16 +1,15 @@
 import { Button } from "./components/Button"
 import { Layaut } from "./components/Layaut"
+import { NavBar } from "./components/NavBar"
 
 function App() {
 
   return (
     <>
       <div className="bg-secundary min-h-screen">
+          <NavBar></NavBar>
           <Layaut>
-            <Button name="Nicoll" />
-            <Button name="Miguel" />
-            <Button name="Alahia" />
-            <Button name="Simon" />
+            <p></p>
           </Layaut>
       </div>
     </>
