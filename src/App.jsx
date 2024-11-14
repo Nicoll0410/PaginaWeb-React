@@ -1,8 +1,11 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 import { Layaut } from "./components/Layaut"
 import { NavBar } from "./components/NavBar"
 import { Inicio } from "./pages/Inicio"
 import { Cursos } from "./pages/Cursos"
+import { Login } from "./pages/Login"
+import { Registro } from "./pages/Registro"
+import { Imagenes } from "./pages/Imagenes"
 
 function App() {
 
@@ -14,7 +17,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Inicio/>}></Route>
                 <Route path="/cursos" element={<Cursos/>}></Route>
-                <Route path="/" element={<Inicio/>}></Route>
+                <Route path="/imagenes" element={<Imagenes/>}></Route>
+                <Route path="/login" element={<Login/>}></Route>
+                <Route path="/registro" element={<Registro/>}></Route>
+                <Route path="*" element={<Navigate to="/"/>}></Route>
               </Routes>
           </Layaut>
       </div>
