@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { Layaut } from "./components/Layaut"
 import { NavBar } from "./components/NavBar"
 import { Inicio } from "./pages/Inicio"
@@ -7,6 +7,7 @@ import { Login } from "./pages/Login"
 import { Registro } from "./pages/Registro"
 import { Imagenes } from "./pages/Imagenes"
 import { Footer } from "./components/Footer"
+import { NotFound } from "./components/NotFound"
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
                 <Route path="/imagenes" element={<Imagenes/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/registro" element={<Registro/>}></Route>
-                <Route path="*" element={<Navigate to="/"/>}></Route>
+                <Route path="*" element={<NotFound/>}></Route>
               </Routes>
           </Layaut>
           <Footer />
