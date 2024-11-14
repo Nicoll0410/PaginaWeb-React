@@ -1,25 +1,123 @@
 export const Inicio = () => {
+    const products = [
+        {
+            id: 1,
+            name: 'Earthen Bottle',
+            href: '#',
+            price: '$48',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg',
+            imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+        },
+        {
+            id: 2,
+            name: 'Nomad Tumbler',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-02.jpg',
+            imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        },
+        {
+            id: 3,
+            name: 'Focus Paper Refill',
+            href: '#',
+            price: '$89',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg',
+            imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+        },
+        {
+            id: 4,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 5,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 6,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 7,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 8,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 9,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 10,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 11,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+        {
+            id: 12,
+            name: 'Machined Mechanical Pencil',
+            href: '#',
+            price: '$35',
+            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+        },
+    ]
     return (
-        <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
-                <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-                    <h1 className="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
-                    <p className="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
-                </div>
-                <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-                    <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-                    <div className="relative mb-4">
-                        <label htmlFor="full-name" className="leading-7 text-sm text-gray-600">Full Name</label>
-                        <input type="text" id="full-name" name="full-name" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                    </div>
-                    <div className="relative mb-4">
-                        <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                    </div>
-                    <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
-                    <p className="text-xs text-gray-500 mt-3">Literally you probably havent heard of them jean shorts.</p>
+        <div className="bg-white">
+            <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                <h2 className="sr-only">Products</h2>
+
+                <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                    {products.map((product) => (
+                        <a key={product.id} href={product.href} className="group">
+                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img
+                                    alt={product.imageAlt}
+                                    src={product.imageSrc}
+                                    className="size-full object-cover object-center group-hover:opacity-75"
+                                />
+                            </div>
+                            <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                            <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                        </a>
+                    ))}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
