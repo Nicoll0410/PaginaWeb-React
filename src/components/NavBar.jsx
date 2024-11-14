@@ -1,6 +1,10 @@
+import { NavLink } from "react-router-dom"
+
 export const NavBar = () => {
 
-    const btnLink = 'block online-block py-1 text-white hover:text-accent cursor-pointer mr-4'
+    const btnLink = 'block inline-block py-1 text-white hover:text-accent cursor-pointer mr-4'
+    const activeLink = 'block inline-bloc1 py-1 text-accent mr-4'
+
     return (
         <header className="text-gray-600 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -11,12 +15,12 @@ export const NavBar = () => {
                     <span className="ml-3 text-xl font-semibold text-primary">Nicoll Giraldo</span>
                 </a>
                 <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a className={btnLink}>Inicio</a>
-                    <a className={btnLink}>Cursos</a>
-                    <a className={btnLink}>Imagenes</a>
+                    <NavLink to="/" className={({isActive}) => isActive ? activeLink : btnLink}>Inicio</NavLink>
+                    <NavLink to="/cursos" className={({isActive}) => isActive ? activeLink : btnLink}>Cursos</NavLink>
+                    <NavLink to="/imagenes" className={({isActive}) => isActive ? activeLink : btnLink}>Imagenes</NavLink>
                 </nav>
-                <a className={btnLink}>Login</a>
-                <a className={btnLink}>Registro</a>
+                <NavLink to="/login" className={({isActive}) => isActive ? activeLink : btnLink}>Login</NavLink>
+                <NavLink to="/registro" className={({isActive}) => isActive ? activeLink : btnLink}>Registro</NavLink>
             </div>
         </header>
     )
