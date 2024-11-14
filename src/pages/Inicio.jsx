@@ -1,121 +1,61 @@
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+
 export const Inicio = () => {
-    const products = [
+
+    const features = [
         {
-            id: 1,
-            name: 'Earthen Bottle',
-            href: '#',
-            price: '$48',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg',
-            imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+            name: 'Push to deploy',
+            description:
+                'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+            icon: CloudArrowUpIcon,
         },
         {
-            id: 2,
-            name: 'Nomad Tumbler',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-02.jpg',
-            imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+            name: 'SSL certificates',
+            description:
+                'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+            icon: LockClosedIcon,
         },
         {
-            id: 3,
-            name: 'Focus Paper Refill',
-            href: '#',
-            price: '$89',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg',
-            imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+            name: 'Simple queues',
+            description:
+                'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+            icon: ArrowPathIcon,
         },
         {
-            id: 4,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 5,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 6,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 7,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 8,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 9,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 10,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 11,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        {
-            id: 12,
-            name: 'Machined Mechanical Pencil',
-            href: '#',
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+            name: 'Advanced security',
+            description:
+                'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+            icon: FingerPrintIcon,
         },
     ]
-    return (
-        <div className="bg-white">
-            <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                <h2 className="sr-only">Products</h2>
 
-                <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                    {products.map((product) => (
-                        <a key={product.id} href={product.href} className="group">
-                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                                <img
-                                    alt={product.imageAlt}
-                                    src={product.imageSrc}
-                                    className="size-full object-cover object-center group-hover:opacity-75"
-                                />
+    return (
+        <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-2xl lg:text-center">
+                    <h2 className="text-base/7 font-semibold text-pink-500">Deploy faster</h2>
+                    <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
+                        Everything you need to deploy your app
+                    </p>
+                    <p className="mt-6 text-lg/8 text-gray-600">
+                        Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
+                        pulvinar et feugiat blandit at. In mi viverra elit nunc.
+                    </p>
+                </div>
+                <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                        {features.map((feature) => (
+                            <div key={feature.name} className="relative pl-16">
+                                <dt className="text-base/7 font-semibold text-gray-900">
+                                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-pink-500">
+                                        <feature.icon aria-hidden="true" className="size-6 text-white" />
+                                    </div>
+                                    {feature.name}
+                                </dt>
+                                <dd className="mt-2 text-base/7 text-gray-600">{feature.description}</dd>
                             </div>
-                            <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                            <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-                        </a>
-                    ))}
+                        ))}
+                    </dl>
                 </div>
             </div>
         </div>
