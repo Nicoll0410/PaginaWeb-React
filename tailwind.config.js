@@ -9,12 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary : "#5c059b",
+        primary : "#ffb5de",
         secundary : "#1E293B",
-        accent: "#CB5930"
+        accent: "#ff008b"
       }
     },
   },
   plugins: [],
 }
-
