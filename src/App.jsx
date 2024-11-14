@@ -6,6 +6,7 @@ import { Cursos } from "./pages/Cursos"
 import { Login } from "./pages/Login"
 import { Registro } from "./pages/Registro"
 import { Imagenes } from "./pages/Imagenes"
+import { Footer } from "./components/Footer"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path="*" element={<Navigate to="/"/>}></Route>
               </Routes>
           </Layaut>
+          <Footer />
       </div>
     </>
   )
